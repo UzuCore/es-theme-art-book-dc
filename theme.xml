@@ -238,6 +238,7 @@ https://github.com/anthonycaccese/art-book-next-es
          <batteryText name="system-battery-text">
             <color>${systemIndicatorColor}</color>
             <fontPath>${fontBold}</fontPath>
+			<fontSize>0.02916667</fontSize>
             <h>0.033333333333333</h>
             <lineSpacing>1</lineSpacing>
          </batteryText>
@@ -261,6 +262,7 @@ https://github.com/anthonycaccese/art-book-next-es
          <clock name="system-clock">
             <color>${systemIndicatorColor}</color>
             <fontPath>${fontBold}</fontPath>
+			<fontSize>0.02916667</fontSize>
             <h>0.033333333333333</h>
             <lineSpacing>1</lineSpacing>
          </clock>
@@ -788,4 +790,3 @@ https://github.com/anthonycaccese/art-book-next-es
    <include ifSubset="aspect-ratio:3-2|3-2-auto">./aspect-ratio-3-2.xml</include>
 
 </theme>
-
