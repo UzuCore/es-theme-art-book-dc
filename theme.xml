@@ -66,10 +66,7 @@ https://github.com/anthonycaccese/art-book-next-es
    -->
    <subset name="system-view-artwork" displayName="시스템 아트워크">
       <include name="default" displayName="기본" />
-      <include name="noir" displayName="Noir" />
       <include name="nintendont" displayName="Nintendon't" />
-      <include name="circuit" displayName="Circuit" />
-      <include name="outline" displayName="아웃라인" />
       <include name="custom" displayName="커스텀" />
       <include name="custom-fullscreen" displayName="커스텀 (풀스크린)" />
    </subset>
@@ -343,20 +340,14 @@ https://github.com/anthonycaccese/art-book-next-es
       </text>
       <!-- End: System Count -->
    </view>
-   <view name="system" ifSubset="system-view-artwork:default|noir|nintendont|circuit|outline|custom">
+   <view name="system" ifSubset="system-view-artwork:default|nintendont|custom">
       <image name="logo">
          <path>./_inc/systems/artwork-default/_default.png</path>
          <path>./_inc/systems/artwork-default/${system.theme}.png</path>
          <path ifSubset="system-view-artwork:default">./_inc/systems/artwork-default/_default.png</path>
          <path ifSubset="system-view-artwork:default">./_inc/systems/artwork-default/${system.theme}.png</path>
-         <path ifSubset="system-view-artwork:noir">./_inc/systems/artwork-noir/_default.png</path>
-         <path ifSubset="system-view-artwork:noir">./_inc/systems/artwork-noir/${system.theme}.png</path>
          <path ifSubset="system-view-artwork:nintendont">./_inc/systems/artwork-nintendont/_default.png</path>
          <path ifSubset="system-view-artwork:nintendont">./_inc/systems/artwork-nintendont/${system.theme}.png</path>
-         <path ifSubset="system-view-artwork:circuit">./_inc/systems/artwork-circuit/_default.png</path>
-         <path ifSubset="system-view-artwork:circuit">./_inc/systems/artwork-circuit/${system.theme}.png</path>
-         <path ifSubset="system-view-artwork:outline">./_inc/systems/artwork-outline/_default.png</path>
-         <path ifSubset="system-view-artwork:outline">./_inc/systems/artwork-outline/${system.theme}.png</path>
          <path ifSubset="system-view-artwork:custom">${themeCustomizationsPath}artwork/_default.png</path>
          <path ifSubset="system-view-artwork:custom">${themeCustomizationsPath}artwork/${system.theme}.png</path>
          <color>${systemArtColor}</color>
@@ -375,8 +366,7 @@ https://github.com/anthonycaccese/art-book-next-es
       </carousel>
       <image name="system-logo" extra="true">
          <origin>0.5 0.5</origin>
-         <pos ifSubset="system-view-artwork:default|noir|nintendont|circuit|custom">0.5 0.5</pos>
-         <pos ifSubset="system-view-artwork:outline">0.5 0.33</pos>
+         <pos>0.5 0.5</pos>
          <color>${systemLogoColor}</color>
          <path>./_inc/systems/logos/${system.theme}.svg</path>
          <path ifSubset="system-logos:custom">${themeCustomizationsPath}logos/${system.theme}.svg</path>
@@ -408,8 +398,7 @@ https://github.com/anthonycaccese/art-book-next-es
       </image>
       <text name="system-name" extra="true">
          <origin>0.5 0.5</origin>
-         <pos ifSubset="system-view-artwork:default|noir|nintendont|circuit|custom">0.5 0.5</pos>
-         <pos ifSubset="system-view-artwork:outline">0.5 0.33</pos>
+         <pos>0.5 0.5</pos>
          <size>0.8 0.4</size>
          <fontSize>0.1125</fontSize>
          <fontPath>${fontLogo}</fontPath>
